@@ -18,14 +18,26 @@
   font-family: "Manrope";
   src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
-body{
-  @apply bg-[#161616] w-full h-full overflow-auto
-
+body {
+  @apply bg-[#161616] w-full h-full overflow-auto;
 }
 
 html {
-  @apply h-screen
+  @apply h-screen;
 }
 #root {
-  @apply h-full w-full
+  @apply h-full w-full;
+}
+#root {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.snap-item {
+  scroll-snap-align: start;
+  margin: 0;
+  height: 100dvh;
 }

@@ -4,7 +4,7 @@ import { OrbitControls, Html } from "@react-three/drei";
 import { motion, AnimatePresence } from "framer-motion";
 import * as THREE from "three";
 import ReactPlayer from "react-player/youtube";
-import { useNavigate } from "react-router-dom";
+
 
 // Fondo 360
 function Background360() {

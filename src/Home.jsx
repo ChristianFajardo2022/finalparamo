@@ -24,12 +24,12 @@ const Home = () => {
   return (
     <div className="relative w-full">
       {/* Sección 1: IntroSection */}
-      <section id="intro" className="min-h-screen">
+      <section id="intro" className="snap-item  relative">
         <IntroSection isPlaying={true} />
       </section>
 
       {/* Sección 2: Modelo 3D */}
-      <section id="modelo" className="min-h-screen">
+      <section id="modelo" className="snap-item ">
         {isMobile ? (
           <ModeloResponsive animateZoom={true} interactive={true} />
         ) : (
@@ -39,12 +39,12 @@ const Home = () => {
       </section>
 
       {/* Sección 3: Experto */}
-      <section id="experto" className="min-h-screen">
+      <section id="experto" className="snap-item ">
         <Experto />
       </section>
 
       {/* Sección 4: Plan */}
-      <section id="plan" className="min-h-screen">
+      <section id="plan" className="snap-item ">
         {isMobile ? <PlanResponsive /> : <Plan />}
       </section>
     </div>
