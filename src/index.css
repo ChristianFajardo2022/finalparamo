@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("/fonts/PPMori-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amenti-VF";
+  src: url("/fonts/Amenti-VF.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tusker-bold";
+  src: url("/fonts/tusker-grotesk-3700-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body{
+  @apply bg-[#161616] w-full h-full overflow-auto
+
+}
+
+html {
+  @apply h-screen
+}
+#root {
+  @apply h-full w-full
+}

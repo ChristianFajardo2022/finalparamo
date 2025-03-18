@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.24 9.4">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="246.5" y="-780.68" width="1355" height="653.16" rx="8" ry="8"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="60" y="-1012.6" width="1728" height="1117"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="47" y="-1018" width="1754" height="1133.81"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g class="cls-3">
+      <g class="cls-4">
+        <image width="5120" height="2134" transform="translate(-278.83 -1019.01) scale(.53)" xlink:href="nueva_pagina_Inter_Rapidisimo_Carpeta/nueva_pagina_Inter_Rapidisimo_Carpeta/Links/carro_el_gran_acto.png"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <line class="cls-2" x1="1.27" y1="8.08" x2="8.1" y2="1.25"/>
+    <polyline class="cls-2" points="3.84 1.09 8.27 1.09 8.27 5.52"/>
+  </g>
+</svg>
