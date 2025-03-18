@@ -29,18 +29,18 @@ const Experto = () => {
       style={{
         backgroundImage: isMobile
           ? "url('/bgExpertoResponsive.png')" // Imagen para mobile
-          : "url('/expertoBack.jpg')",         // Imagen para desktop
+          : "url('/expertoBack.jpg')", // Imagen para desktop
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-     
       {/* Contenedor del reproductor */}
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden"
         style={{
           background: isMobile
-            ? "" : "linear-gradient(to right, rgb(0 0 0 / 75%), transparent)",
+            ? ""
+            : "linear-gradient(to right, rgb(0 0 0 / 75%), transparent)",
         }}
       >
         {showPlayer && (
@@ -73,12 +73,12 @@ const Experto = () => {
         animate={isPlaying ? { opacity: 0 } : { opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className=" md:w-1/2 xs:w-full flex flex-col items-start justify-center md:pl-40  md:pr-10 md:p-10 xs:pr-0 xs:px-10 xs:gap-5 md:gap-0">
-          <h1 className="font-Tusker md:text-[80px] xs:text-[38px] text-start leading-tight">
+        <div className="md:w-1/2 xs:w-full flex flex-col items-start justify-center md:pl-40 md:p-10 xs:px-10 xs:gap-5 md:gap-0 translate-y-20">
+          <h1 className="font-Tusker md:text-7xl xs:text-3xl text-start lg:leading-tight">
             DETRÁS DE ESTA SIEMBRA <br /> ESTÁN LOS 15 AÑOS DE TRABAJO
             <br /> DE CARLOS PÉREZ.
           </h1>
-          <p className="md:text-[20px] xs:text-[14px] font-Manrope max-w-[90%] text-start">
+          <p className="md:text-xl xs:text-xs font-Manrope max-w-[90%] text-start">
             Este biólogo experto nos cuenta cómo, junto a Inter Rapidísimo,
             ayudó a crear un modelo de enriquecimiento vegetal basado en un
             estudio topográfico, la creación de un plan de siembra por núcleos y
@@ -86,17 +86,12 @@ const Experto = () => {
           </p>
           <button
             onClick={handlePlayVideo}
-            className="group cursor-pointer flex gap-5 z-50 xs:text-[14px] border font-bold font-Manrope tracking-[0.3em] rounded-lg py-2 px-16 mt-4 md:bg-black md:bg-opacity-40 xs:bg-white hover:bg-white hover:text-black xs:text-black md:text-white"
+            className="max-lg:w-full group cursor-pointer flex justify-center items-center gap-5 z-50 xs:text-xs lg:text-xl border font-bold font-Manrope tracking-[0.3em] rounded-lg py-2 lg:px-16 mt-4 md:bg-black md:bg-opacity-40 xs:bg-white hover:bg-white hover:text-black xs:text-black md:text-white"
           >
             <img
-              className="w-4 block group-hover:hidden"
+              className="w-4 block lg:invert-0 xs:invert group-hover:xs:invert-0 group-hover:lg:invert"
               src="/playblanco.svg"
               alt="Play Blanco"
-            />
-            <img
-              className="w-4 md:hidden xs:block group-hover:block"
-              src="/playNegro.svg"
-              alt="Play Negro"
             />
             VER AHORA
           </button>
