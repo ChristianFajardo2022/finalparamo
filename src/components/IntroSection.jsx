@@ -13,7 +13,7 @@ const IntroSection = ({ isPlaying }) => {
   };
 
   const handleVideoEnded = () => {
-    // Simplemente oculta el modal; ya no se dispara ninguna transición automática.
+    // Simplemente oculta el modal; la navegación se hará mediante scroll a la siguiente sección.
     setShowFullScreenVideo(false);
     setShowSkipButton(false);
   };
@@ -43,6 +43,20 @@ const IntroSection = ({ isPlaying }) => {
 
   return (
     <>
+      {/* Video de background local */}
+      <figcaption className=" w-full h-full inline-block">
+
+      <video
+        autoPlay
+        loop
+        muted
+        className=" w-full h-full object-cover object-center z-0"
+      >
+        <source src="/Intro-GP2-(1).mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+      </figcaption>
+
       {/* Contenido principal de IntroSection */}
       <motion.div
         className="primeraParte absolute inset-0 z-30 overflow-hidden"
@@ -61,7 +75,7 @@ const IntroSection = ({ isPlaying }) => {
         </motion.div>
 
         <motion.div
-          className="text-white w-full h-[80vh] flex flex-col items-center justify-center bg-black/50"
+          className="text-white w-full h-[80vh] flex flex-col items-center justify-center "
           initial={{ opacity: 1 }}
           animate={isPlaying ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -95,7 +109,7 @@ const IntroSection = ({ isPlaying }) => {
         />
       </motion.div>
 
-      {/* Modal para reproducir el video */}
+      {/* Modal para reproducir el video de YouTube */}
       {showFullScreenVideo && (
         <div className="fixed inset-0 z-40 flex items-center justify-center">
           {/* Fondo con efecto blur */}

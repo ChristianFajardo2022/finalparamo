@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player/youtube";
-import NavigationPanelResponsive from "./NavigationPanelResponsive";
-import NavigationPanel from "./NavigationPanel";
 
 const Experto = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,12 +34,7 @@ const Experto = () => {
         backgroundPosition: "center",
       }}
     >
-      {isMobile ?
-      
-      <NavigationPanelResponsive />
-      :
-      <NavigationPanel />
-      }
+     
       {/* Contenedor del reproductor */}
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden"

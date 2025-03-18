@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NavigationPanelResponsive from "./NavigationPanelResponsive";
 
 const PlanResponsive = () => {
       useEffect(() => {
@@ -62,7 +61,6 @@ const PlanResponsive = () => {
         </button>
  */}      </div>
       {/* El NavigationPanelResponsive se incluye al final del contenido, en el flujo normal */}
-      <NavigationPanelResponsive />
     </div>
   );
 };

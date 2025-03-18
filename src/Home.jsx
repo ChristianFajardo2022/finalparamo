@@ -6,7 +6,6 @@ import IntroSection from "./components/IntroSection";
 import Experto from "./components/Experto";
 import Plan from "./components/Plan";
 import PlanResponsive from "./components/PlanResponsive";
-import SmoothNavigationPanel from "./components/SmoothNavigationPanel";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,7 +34,7 @@ const Home = () => {
         ) : (
           <Modelo animateZoom={true} interactive={true} />
         )}
-        <SmoothNavigationPanel />
+        
       </section>
 
       {/* Sección 3: Experto */}

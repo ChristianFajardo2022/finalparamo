@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NavigationPanel from "./NavigationPanel";
-import NavigationPanelResponsive from "./NavigationPanelResponsive";
 
 const Plan = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,7 +34,6 @@ const Plan = () => {
         backgroundPosition: "center",
       }}
     >
-      {isMobile ? <NavigationPanelResponsive /> : <NavigationPanel />}
       <div className="w-full h-full flex flex-col items-center justify-center my-[200px]">
         <div className="w-[70%] flex">
           <div className="w-[45%]"></div>
