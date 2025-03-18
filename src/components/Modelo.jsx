@@ -113,11 +113,10 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
       position: [-10, 2, -2.5],
       text: "El agua es el principio de todo",
       hoverImage: "/puntos/blu-olimpica.png",
-      popupContent:
-        "La montaña nos recordó por qué vale la pena cuidarla.",
+      popupContent: "La montaña nos recordó por qué vale la pena cuidarla.",
       videoUrl: "https://youtu.be/h91sTCbZmfU",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/blu-olompica2.png"
+      imageHoverDos: "/puntos/blu-olompica2.png",
     },
     {
       id: 2,
@@ -128,7 +127,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "El páramo les llenó el alma, sembrar frailejones, los comprometió con el cuidado de esta tierra.",
       videoUrl: "https://youtu.be/GNbJcA2GMsg",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/caracol-rcn2.png"
+      imageHoverDos: "/puntos/caracol-rcn2.png",
     },
     {
       id: 3,
@@ -139,7 +138,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Cada paso en el páramo fue un pacto silencioso con la vida.",
       videoUrl: "https://youtu.be/QVjTLb7O9Lk",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/citroen-gwm2.png"
+      imageHoverDos: "/puntos/citroen-gwm2.png",
     },
     {
       id: 4,
@@ -150,7 +149,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Caminaron hasta el origen del agua y entendieron que protegerla es protegernos.",
       videoUrl: "https://youtu.be/LMRRRg1y1pQ",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/claro-movistar2.png"
+      imageHoverDos: "/puntos/claro-movistar2.png",
     },
     {
       id: 5,
@@ -161,7 +160,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Allí entendieron que la vida y el agua empiezan en ese silencio que lo dice todo.",
       videoUrl: "https://youtu.be/3hpZ1cpyneo",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/dhl-deprisa2.png"
+      imageHoverDos: "/puntos/dhl-deprisa2.png",
     },
     {
       id: 6,
@@ -172,7 +171,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "En el páramo todo se hizo claro: estamos aquí para cuidar.",
       videoUrl: "https://youtu.be/Llxs-ttMDq4",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/falabella-aval2.png"
+      imageHoverDos: "/puntos/falabella-aval2.png",
     },
     {
       id: 7,
@@ -183,7 +182,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Cada paso fue una promesa de volver a cuidar lo que importa.",
       videoUrl: "https://youtu.be/EOUJBerNoiI",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/margarita-ramo2.png"
+      imageHoverDos: "/puntos/margarita-ramo2.png",
     },
     {
       id: 8,
@@ -194,7 +193,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Llegaron al páramo y la montaña los convirtió en defensores de la vida.",
       videoUrl: "https://youtu.be/zP4JLhBd8zY",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/pepsico-ramo2.png"
+      imageHoverDos: "/puntos/pepsico-ramo2.png",
     },
     {
       id: 9,
@@ -205,7 +204,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "No se conquista el páramo, se entiende, se respeta y se protege.",
       videoUrl: "https://youtu.be/oUg511UHShQ",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/rappi-amazon2.png"
+      imageHoverDos: "/puntos/rappi-amazon2.png",
     },
     {
       id: 10,
@@ -216,7 +215,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Descubrieron que el agua nace en ese frío que también abraza.",
       videoUrl: "https://youtu.be/o47HOSVhXhI",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/suzuki-autogermana2.png"
+      imageHoverDos: "/puntos/suzuki-autogermana2.png",
     },
     {
       id: 11,
@@ -227,7 +226,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
         "Subieron por la experiencia y bajaron con la responsabilidad de proteger la montaña.",
       videoUrl: "https://youtu.be/fe_kxkVQE20",
       hoverUno: "CONOCE LA HISTORIA DE",
-      imageHoverDos: "/puntos/taxislibres-picap2.png"
+      imageHoverDos: "/puntos/taxislibres-picap2.png",
     },
   ];
 
@@ -246,12 +245,14 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
       <Lights />
       <Model3D />
       <OrbitControls
-        target={[5, 2, -3]}
-        minDistance={10} // Zoom mínimo
-        maxDistance={25} // Zoom máximo
-        minPolarAngle={Math.PI / 2 - 0.15} // Permite ±0.15 radianes verticalmente (10%)
+        makeDefault
+        enableDamping 
+        dampingFactor={0.01} // Ajusta la suavidad (0.1 es suave pero puedes probar con 0.05 o 0.2)
+        enableZoom={false} // Desactiva el zoom
+        target={[5, 2, -3]} // Punto de enfoque
+        minPolarAngle={Math.PI / 2 - 0.15}
         maxPolarAngle={Math.PI / 2 + 0.15}
-        minAzimuthAngle={-0.65 - 0.195} // horizontal: ±0.195 rad (30%)
+        minAzimuthAngle={-0.65 - 0.195}
         maxAzimuthAngle={-0.65 + 0.195}
       />
       {animateZoom && !zoomComplete && (
@@ -332,40 +333,42 @@ const Modelo = ({ animateZoom, interactive }) => {
             className="w-full h-32 absolute z-50 top-[20%]  rounded-2xl tituloPuntos"
           >
             <div className="w-full h-full flex flex-col items-center justify-center text-white ">
-        <div className="w-auto h-full flex flex-col items-center justify-center px-8 rounded-2xl opcionHover">
-          {hoveredPoint ? (
-            <>
-            <div className=" flex relative">
-
-              <h1 className=" leading-[2rem] font-Tusker text-[55px]">
-                {hoveredPoint.hoverUno}
-              </h1>
-              <h1 className="absolute right-[-15px] top-[-37px] font-Tusker text-[55px]">:</h1>
+              <div className="w-auto h-full flex flex-col items-center justify-center px-8 rounded-2xl opcionHover">
+                {hoveredPoint ? (
+                  <>
+                    <div className=" flex relative">
+                      <h1 className=" leading-[2rem] font-Tusker text-[55px]">
+                        {hoveredPoint.hoverUno}
+                      </h1>
+                      <h1 className="absolute right-[-15px] top-[-37px] font-Tusker text-[55px]">
+                        :
+                      </h1>
+                    </div>
+                    <p className="text-[19px] mt-5 font-Manrope">
+                      <img
+                        src={hoveredPoint.imageHoverDos}
+                        alt="Imagen hover"
+                        style={{ maxWidth: "100%" }}
+                      />
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <h1 className="leading-[2rem] font-Tusker text-[55px]">
+                      CADA UNO DE ESTOS FRAILEJONES TIENE UNA HISTORIA PARA
+                      CONTARTE.
+                    </h1>
+                    <p className="text-[19px] mt-5 font-Manrope">
+                      Haz clic en los puntos para conocerla.
+                    </p>
+                  </>
+                )}
+              </div>
             </div>
-              <p className="text-[19px] mt-5 font-Manrope">
-                <img
-                  src={hoveredPoint.imageHoverDos}
-                  alt="Imagen hover"
-                  style={{ maxWidth: "100%" }}
-                />
-              </p>
-            </>
-          ) : (
-            <>
-              <h1 className="leading-[2rem] font-Tusker text-[55px]">
-                CADA UNO DE ESTOS FRAILEJONES TIENE UNA HISTORIA PARA CONTARTE.
-              </h1>
-              <p className="text-[19px] mt-5 font-Manrope">
-                Haz clic en los puntos para conocerla.
-              </p>
-            </>
-          )}
-        </div>
-      </div>
-    </motion.div>
-  )}
-</AnimatePresence>
-     {/*  {hoveredPoint && (
+          </motion.div>
+        )}
+      </AnimatePresence>
+      {/*  {hoveredPoint && (
         <div
           style={{
             position: "absolute",
@@ -420,14 +423,13 @@ const Modelo = ({ animateZoom, interactive }) => {
                 </button>
                 {/* Se usa ReactPlayer para reproducir el video dinámico del punto */}
                 <div className=" w-full h-full rounded-3xl overflow-hidden">
-                <ReactPlayer
-                  url={selectedPoint.videoUrl}
-                  width="100%"
-                  height="100%"
-                  controls={false}
-                  playing={true}
-                  
-                />
+                  <ReactPlayer
+                    url={selectedPoint.videoUrl}
+                    width="100%"
+                    height="100%"
+                    controls={false}
+                    playing={true}
+                  />
                 </div>
                 <div className="w-full mt-0">
                   <h1 className="font-Tusker text-[41px]">
