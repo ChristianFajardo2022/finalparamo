@@ -354,12 +354,11 @@ const Modelo = ({ animateZoom, interactive }) => {
                   </>
                 ) : (
                   <>
-                    <h1 className="leading-[2rem] font-Tusker text-[55px]">
-                      CADA UNO DE ESTOS FRAILEJONES TIENE UNA HISTORIA PARA
-                      CONTARTE.
+                    <h1 className="leading-[3.5rem] font-Tusker md:text-7xl xs:text-3xl uppercase text-center">
+                    23 de las marcas más amadas del país,<br/> sembraron vida en el páramo
                     </h1>
-                    <p className="text-[19px] mt-5 font-Manrope">
-                      Haz clic en los puntos para conocerla.
+                    <p className="md:text-xl xs:text-xs mt-5 font-Manrope">
+                    Haz clic en los puntos para conocer su historia.
                     </p>
                   </>
                 )}
@@ -431,11 +430,11 @@ const Modelo = ({ animateZoom, interactive }) => {
                     playing={true}
                   />
                 </div>
-                <div className="w-full mt-0">
-                  <h1 className="font-Tusker text-[41px]">
+                <div className="w-full flex flex-col gap-5">
+                  <h1 className="font-Tusker text-5xl">
                     {selectedPoint.text}
                   </h1>
-                  <p className="font-Manrope text-base">
+                  <p className="font-Manrope text-lg">
                     {selectedPoint.popupContent}
                   </p>
                 </div>

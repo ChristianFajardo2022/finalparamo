@@ -34,7 +34,7 @@ const IntroSection = ({ isPlaying }) => {
     if (showFullScreenVideo) {
       timer = setTimeout(() => {
         setShowSkipButton(true);
-      }, 5000);
+      }, 2000);
     }
     return () => {
       if (timer) clearTimeout(timer);
@@ -102,11 +102,12 @@ const IntroSection = ({ isPlaying }) => {
         </motion.div>
 
         <motion.div
-          className="w-full h-[10vh] bg-black bg-opacity-85"
+          className="w-full h-[10vh] bg-black bg-opacity-85 relative"
           initial={{ y: 0 }}
           animate={isPlaying ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         />
+       <img src="/Mouse.gif" alt="Mi GIF animado" className="w-14 z-50 absolute bottom-5 left-1/2 transform -translate-x-1/2 " />
       </motion.div>
 
       {/* Modal para reproducir el video de YouTube */}
@@ -117,7 +118,7 @@ const IntroSection = ({ isPlaying }) => {
           {/* Contenedor del modal: 85% de ancho y 85% (desktop) o 55% (mobile) de alto */}
           <motion.div
             className="relative rounded-lg overflow-hidden"
-            style={{ width: "85%", height: isMobile ? "55%" : "85%" }}
+            style={{ width: "100%", height: isMobile ? "75%" : "100%" }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}

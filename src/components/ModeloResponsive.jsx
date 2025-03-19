@@ -44,7 +44,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "La montaña nos recordó por qué vale la pena cuidarla.",
       videoUrl: "https://youtu.be/3hpZ1cpyneo",
-      image: "/puntos/puntosResponsive/RespOlimpica-Blu.png"
+      image: "/puntos/puntosResponsive/ResponsiveOlimpica-Blu.png"
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "El páramo les llenó el alma, sembrar frailejones, los comprometió con el cuidado de esta tierra.",
       videoUrl: "https://youtu.be/GNbJcA2GMsg",
-      image: "/puntos/puntosResponsive/respCaracol-Rcn.png"
+      image: "/puntos/puntosResponsive/ResponsiveCaracol-Rcn.png"
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Cada paso en el páramo fue un pacto silencioso con la vida.",
       videoUrl: "https://youtu.be/LMRRRg1y1pQ",
-      image: "/puntos/puntosResponsive/respCitroen-gwn.png"
+      image: "/puntos/puntosResponsive/ResponsiveCitroen-Gwm.png"
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Caminaron hasta el origen del agua y entendieron que protegerla es protegernos.",
       videoUrl: "https://www.youtube.com/watch?v=VIDEOID1",
-      image: "/puntos/puntosResponsive/RespClaro-Movistar.png"
+      image: "/puntos/puntosResponsive/ResponsiveClaro-Movistar.png"
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Allí entendieron que la vida y el agua empiezan en ese silencio que lo dice todo.",
       videoUrl: "https://youtu.be/h91sTCbZmfU",
-      image: "/puntos/puntosResponsive/RespDhl-Deprisa.png"
+      image: "/puntos/puntosResponsive/ResponsiveDhl-Deprisa.png"
     },
     {
       id: 6,
@@ -89,7 +89,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "En el páramo todo se hizo claro: estamos aquí para cuidar.",
       videoUrl: "https://youtu.be/QVjTLb7O9Lk",
-      image: "/puntos/puntosResponsive/RespAval-Falabella.png"
+      image: "/puntos/puntosResponsive/ResponsiveAval-Falabella.png"
     },
     {
       id: 7,
@@ -98,7 +98,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Cada paso fue una promesa de volver a cuidar lo que importa.",
       videoUrl: "https://youtu.be/zP4JLhBd8zY",
-      image: "/puntos/puntosResponsive/RespMargarita-Ramo.png"
+      image: "/puntos/puntosResponsive/ResponsiveMargarita-Ramo.png"
     },
     {
       id: 8,
@@ -107,7 +107,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Llegaron al páramo y la montaña los convirtió en defensores de la vida.",
       videoUrl: "https://www.youtube.com/watch?v=VIDEOID1",
-      image: "/puntos/puntosResponsive/RespRamo-Pepsico.png"
+      image: "/puntos/puntosResponsive/ResponsiveRamo-Pepsico.png"
     },
     {
       id: 9,
@@ -116,7 +116,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "No se conquista el páramo, se entiende, se respeta y se protege.",
       videoUrl: "https://youtu.be/oUg511UHShQ",
-      image: "/puntos/puntosResponsive/RespRappi-Amazon.png"
+      image: "/puntos/puntosResponsive/ResponsiveRappi-Amazon.png"
     },
     {
       id: 10,
@@ -125,7 +125,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Descubrieron que el agua nace en ese frío que también abraza.",
       videoUrl: "https://www.youtube.com/watch?v=VIDEOID1",
-      image: "/puntos/puntosResponsive/RespSuzuki-Autogermana.png"
+      image: "/puntos/puntosResponsive/ResponsiveSuzuki-Autogermana.png"
     },
     {
       id: 11,
@@ -134,7 +134,7 @@ function Scene({ onSelect, interactive }) {
       popupContent:
         "Subieron por la experiencia y bajaron con la responsabilidad de proteger la montaña.",
       videoUrl: "https://youtu.be/Llxs-ttMDq4",
-      image: "/puntos/puntosResponsive/RespTaxislibres-Picap.png"
+      image: "/puntos/puntosResponsive/ResponsiveTaxislibres-Picap.png"
     },
   ];
 
@@ -212,13 +212,12 @@ const ModeloResponsive = ({ animateZoom, interactive }) => {
             transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
             className="w-full h-32 absolute z-50 top-[15%] rounded-2xl flex items-center justify-center text-white"
           >
-            <div className="text-center">
-              <h1 className="font-Tusker text-[38px] leading-none">
-                CADA UNO DE ESTOS FRAILEJONES
-                <br /> TIENE UNA HISTORIA PARA CONTARTE.
+            <div className="text-center px-12 w-full h-96 flex flex-col items-center justify-center">
+              <h1 className="font-Tusker md:text-7xl xs:text-3xl leading-none">
+              23 de las marcas más amadas del país, sembraron vida en el páramo
               </h1>
-              <p className="text-[19px] font-Manrope">
-                Haz clic en los puntos para conocerla.
+              <p className="md:text-xl xs:text-xs font-Manrope">
+              Haz clic en los puntos para conocer su historia
               </p>
             </div>
           </motion.div>
