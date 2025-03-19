@@ -7,6 +7,7 @@ import Experto from "./components/Experto";
 import Plan from "./components/Plan";
 import PlanResponsive from "./components/PlanResponsive";
 import { Formulario } from "./components/Formulario";
+import { NavLateral } from "./components/NavLateral";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -23,6 +24,7 @@ const Home = () => {
 
   return (
     <div className="relative w-full">
+      {!isMobile && <NavLateral />}
       {/* Sección 1: IntroSection */}
       <section id="intro" className="snap-item  relative">
         <IntroSection isPlaying={true} />

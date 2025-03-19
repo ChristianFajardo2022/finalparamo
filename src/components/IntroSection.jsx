@@ -65,7 +65,7 @@ const IntroSection = ({ isPlaying }) => {
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         <motion.div
-          className="w-full h-[10vh] bg-black bg-opacity-85 flex justify-between md:px-44 xs:px-5"
+          className="w-full h-[10vh] bg-black bg-opacity-85 flex justify-between md:px-12 xs:px-5"
           initial={{ y: 0 }}
           animate={isPlaying ? { y: 0, opacity: 1 } : { y: -100, opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
