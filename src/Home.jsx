@@ -6,6 +6,7 @@ import IntroSection from "./components/IntroSection";
 import Experto from "./components/Experto";
 import Plan from "./components/Plan";
 import PlanResponsive from "./components/PlanResponsive";
+import { Formulario } from "./components/Formulario";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,12 +35,14 @@ const Home = () => {
         ) : (
           <Modelo animateZoom={true} interactive={true} />
         )}
-        
       </section>
 
       {/* Sección 3: Experto */}
       <section id="experto" className="snap-item ">
         <Experto />
+      </section>
+      <section id="formulario" className="snap-item ">
+        <Formulario />
       </section>
 
       {/* Sección 4: Plan */}

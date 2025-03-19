@@ -278,6 +278,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.8 }}
               transition={{
                 delay: index * 0.3,
                 duration: 0.5,
@@ -295,7 +296,7 @@ function Scene({ animateZoom, onHover, onSelect, onZoomComplete }) {
                 onSelect({ ...point, screenPos });
               }}
             >
-              <Lottie animationData={animatedSVG} loop={true} />
+              <Lottie animationData={animatedSVG} loop={true} className=" hover:scale-150" />
             </motion.div>
           </Html>
         ))}
