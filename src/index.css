@@ -23,8 +23,9 @@ body {
 }
 
 html {
-  @apply h-screen;
+  @apply h-screen  sm:text-[1vw] 2xl:text-[16px] scroll-smooth;
 }
+
 #root {
   @apply h-full w-full;
 }
@@ -41,3 +42,4 @@ html {
   margin: 0;
   height: 100dvh;
 }
+ 
